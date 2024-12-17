@@ -8,7 +8,9 @@
     "check": "bunx expo install --fix",
     "doctor": "bunx expo-doctor@latest",
     "start": "bunx expo start -c",
-    "ios": "bunx expo run ios"
+    "ios": "bunx expo run ios",
+    "prebuild": "bunx expo prebuild",
+    "prebuild:clean": "bunx expo prebuild --clean"
   },
   "dependencies": {
     "@my/ui": "workspace:*",
