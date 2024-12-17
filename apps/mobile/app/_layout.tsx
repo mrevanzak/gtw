@@ -1,4 +1,4 @@
-import { Provider } from "app/provider";
+import { Provider } from "@gtw/app/provider";
 import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";

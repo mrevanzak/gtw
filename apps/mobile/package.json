@@ -1,5 +1,5 @@
 {
-  "name": "expo-app",
+  "name": "@gtw/mobile",
   "version": "0.3.1",
   "main": "index.ts",
   "private": true,
@@ -13,8 +13,8 @@
     "prebuild:clean": "bunx expo prebuild --clean"
   },
   "dependencies": {
-    "@my/ui": "workspace:*",
-    "app": "workspace:*",
+    "@gtw/ui": "workspace:*",
+    "@gtw/app": "workspace:*",
     "burnt": "^0.12.2",
     "expo": "~51.0.26",
     "expo-constants": "^16.0.2",

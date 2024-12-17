@@ -2,8 +2,8 @@
   "extends": "./tsconfig.base",
   "compilerOptions": {
     "paths": {
-      "app/*": ["./packages/app/*"],
-      "@my/ui/*": ["./packages/ui/*"]
+      "@gtw/app/*": ["./packages/app/*"],
+      "@gtw/ui/*": ["./packages/ui/*"]
     }
   },
   "exclude": [

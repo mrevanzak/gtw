@@ -36,4 +36,5 @@ if (error) {
   process.exit(1);
 }
 
+// biome-ignore lint/style/noNonNullAssertion: <explanation>
 export default env!;

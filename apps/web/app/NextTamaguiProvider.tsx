@@ -1,10 +1,10 @@
 "use client";
 
+import { Provider } from "@gtw/app/provider";
+import { config } from "@gtw/ui";
 import "@tamagui/core/reset.css";
 import "@tamagui/font-inter/css/400.css";
 import "@tamagui/font-inter/css/700.css";
-import { config } from "@my/ui";
-import { Provider } from "app/provider";
 import { useServerInsertedHTML } from "next/navigation";
 import type { ReactNode } from "react";
 import { StyleSheet } from "react-native";
@@ -48,7 +48,7 @@ export function NextTamaguiProvider({ children }: { children: ReactNode }) {
 
         <style jsx global>{`
           html {
-            font-family: 'Inter';
+            font-family: "Inter";
           }
         `}</style>
       </>

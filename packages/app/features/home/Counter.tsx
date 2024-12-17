@@ -1,5 +1,5 @@
-import { Button, H1, Input, Text, XStack, YStack } from "@my/ui";
-import { useCounterStore } from "app/zustand";
+import { useCounterStore } from "@gtw/app/stores";
+import { Button, H1, Input, Text, XStack, YStack } from "@gtw/ui";
 
 export function Counter() {
   const {

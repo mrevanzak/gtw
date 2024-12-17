@@ -1,11 +1,11 @@
 {
-  "name": "app",
+  "name": "@gtw/app",
   "version": "0.3.1",
   "main": "index.ts",
   "private": true,
   "sideEffects": ["*.css"],
   "dependencies": {
-    "@my/ui": "workspace:*",
+    "@gtw/ui": "workspace:*",
     "@react-navigation/native": "^6.1.18",
     "@tamagui/lucide-icons": "latest",
     "@tamagui/next-theme": "latest",

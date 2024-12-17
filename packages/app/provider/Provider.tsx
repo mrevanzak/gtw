@@ -1,12 +1,12 @@
+import { type mode, useThemeStore } from "@gtw/app/stores";
 import {
   NativeToast,
   TamaguiProvider,
   type TamaguiProviderProps,
   ToastProvider,
   config,
-} from "@my/ui";
+} from "@gtw/ui";
 import { DarkTheme, DefaultTheme, ThemeProvider } from "@react-navigation/native";
-import { type mode, useThemeStore } from "app/zustand";
 import { Appearance } from "react-native";
 import { ToastViewport } from "./ToastViewport";
 

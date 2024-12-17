@@ -1,5 +1,5 @@
-import { H2 } from "@my/ui";
-import { useClockStore, useInterval } from "app/zustand";
+import { useClockStore, useInterval } from "@gtw/app/stores";
+import { H2 } from "@gtw/ui";
 
 const formatTime = (time: number) => {
   // cut off except hh:mm:ss

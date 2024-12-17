@@ -1,4 +1,4 @@
-import { Button, Paragraph, Sheet, useToastController } from "@my/ui";
+import { Button, Paragraph, Sheet, useToastController } from "@gtw/ui";
 import { ChevronDown, ChevronUp } from "@tamagui/lucide-icons";
 import { useState } from "react";
 import { Counter } from "./Counter";

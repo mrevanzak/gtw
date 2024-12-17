@@ -1,17 +1,17 @@
+import { type mode, useThemeStore } from "@gtw/app/stores";
 import {
   NativeToast,
   TamaguiProvider,
   type TamaguiProviderProps,
   ToastProvider,
   config,
-} from "@my/ui";
+} from "@gtw/ui";
 import { NextThemeProvider, useRootTheme, useThemeSetting } from "@tamagui/next-theme";
-import { type mode, useThemeStore } from "app/zustand";
 import { ToastViewport } from "./ToastViewport";
 
 export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, "config">) {
   const [_, setTheme] = useRootTheme();
-  const themeSetting = useThemeSetting()!;
+  const themeSetting = useThemeSetting();
   const { scheme } = useThemeStore();
 
   const current = () => {
@@ -22,7 +22,7 @@ export function Provider({ children, ...rest }: Omit<TamaguiProviderProps, "conf
   };
 
   return (
-    <NextThemeProvider onChangeTheme={setTheme as any}>
+    <NextThemeProvider onChangeTheme={setTheme}>
       <TamaguiProvider config={config} defaultTheme={current()} disableInjectCSS {...rest}>
         <ToastProvider
           swipeDirection="horizontal"

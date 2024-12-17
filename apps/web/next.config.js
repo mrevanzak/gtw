@@ -17,7 +17,7 @@ const disableExtraction =
 const plugins = [
   withTamagui({
     config: "../../packages/ui/src/tamagui.config.ts",
-    components: ["tamagui", "@my/ui"],
+    components: ["tamagui", "@gtw/ui"],
     appDir: true,
     importsWhitelist: ["constants.js", "colors.js"],
     outputCSS: process.env.NODE_ENV === "production" ? "./public/tamagui.css" : null,

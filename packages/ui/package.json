@@ -1,5 +1,5 @@
 {
-  "name": "@my/ui",
+  "name": "@gtw/ui",
   "version": "0.3.1",
   "private": true,
   "main": "./src/index.tsx",

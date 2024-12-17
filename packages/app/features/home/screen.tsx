@@ -1,6 +1,16 @@
-import { Anchor, Button, H1, MyMotiLink, Paragraph, Separator, Text, XStack, YStack } from "@my/ui";
+import { useThemeStore } from "@gtw/app/stores";
+import {
+  Anchor,
+  Button,
+  H1,
+  MyMotiLink,
+  Paragraph,
+  Separator,
+  Text,
+  XStack,
+  YStack,
+} from "@gtw/ui";
 import { Monitor, Moon, Sun } from "@tamagui/lucide-icons";
-import { useThemeStore } from "app/zustand";
 import { useLink } from "solito/navigation";
 import { Clock } from "./Clock";
 import { SheetDemo } from "./sheet";

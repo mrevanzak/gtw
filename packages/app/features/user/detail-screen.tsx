@@ -1,4 +1,4 @@
-import { Button, Paragraph, YStack } from "@my/ui";
+import { Button, Paragraph, YStack } from "@gtw/ui";
 import { ChevronLeft } from "@tamagui/lucide-icons";
 import { useParams, useRouter } from "solito/navigation";
 
