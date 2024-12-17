@@ -2,7 +2,10 @@
   "name": "expo-next-tamagui-monorepo",
   "version": "0.3.1",
   "private": true,
-  "workspaces": ["./apps/*", "./packages/*"],
+  "workspaces": [
+    "./apps/*",
+    "./packages/*"
+  ],
   "scripts": {
     "api:dev": "bun --filter '@gtw/api' dev",
     "android": "bun --filter '@gtw/mobile' android",
@@ -12,8 +15,9 @@
     "doctor": "bun --filter '@gtw/mobile' doctor",
     "ios": "bun --filter '@gtw/mobile' ios",
     "lint": "bunx @biomejs/biome check --write .",
+    "package-check": "bunx sherif@latest -f -r root-package-dependencies",
     "native": "bun --filter '@gtw/mobile' start",
-    "postinstall": "bun run build",
+    "postinstall": "bun run build && bun package-check",
     "watch": "bun --filter '@gtw/ui' watch",
     "web": "bun run build && bun --filter '@gtw/web' dev",
     "web:extract": "DISABLE_EXTRACTION=false bun --fitler '@gtw/web' dev",
@@ -21,7 +25,7 @@
     "web:prod:serve": "bun --filter '@gtw/web' serve"
   },
   "dependencies": {
-    "react": "18.2.0",
+    "react": "18.3.1",
     "react-dom": "18.2.0",
     "react-native": "0.74.5",
     "react-native-web": "^0.19.12"
@@ -29,8 +33,9 @@
   "devDependencies": {
     "@babel/types": "^7.25.2",
     "@types/bun": "^1.1.6",
-    "@types/react": "~18.2.79",
+    "@types/react": "~18.3.12",
     "@types/react-native": "^0.73.0",
-    "typescript": "~5.3.3"
-  }
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "bun@1.1.34"
 }
