@@ -1,0 +1,22 @@
+{
+  "diffEditor.codeLens": true,
+  "editor.formatOnSave": true,
+  "editor.inlayHints.enabled": "on",
+  "editor.tabCompletion": "on",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, yarn.lock, bun.lockb"
+  },
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.tamagui": true,
+    "**/.next": true,
+    "**/.yarn": true,
+    "**/.pnp.*": true,
+    "**/dist": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}
